@@ -1,0 +1,372 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CV của Bùi Vân Chi - Chuyên viên Truyền thông</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light gray background */
+            color: #333;
+            line-height: 1.6;
+        }
+
+        .container {
+            max-width: 1000px;
+        }
+
+        .header-section {
+            background-color: #1a202c; /* Dark blue-gray */
+            color: #fff;
+        }
+
+        .profile-image {
+            width: 180px;
+            height: 180px;
+            object-fit: cover;
+            border-radius: 50%;
+            border: 6px solid #fff;
+            box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+            transition: transform 0.3s ease-in-out;
+        }
+
+        .profile-image:hover {
+            transform: scale(1.05);
+        }
+
+        .section-heading {
+            font-size: 1.875rem; /* text-3xl */
+            font-weight: 700; /* font-bold */
+            color: #2c5282; /* Darker blue */
+            margin-bottom: 1.5rem;
+            position: relative;
+            padding-bottom: 0.5rem;
+        }
+
+        .section-heading::after {
+            content: '';
+            position: absolute;
+            left: 0;
+            bottom: 0;
+            width: 60px;
+            height: 4px;
+            background-color: #3182ce; /* Accent blue */
+            border-radius: 9999px;
+        }
+
+        .card {
+            background-color: #ffffff;
+            border-radius: 0.75rem; /* rounded-xl */
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+            padding: 2rem;
+            margin-bottom: 2rem;
+        }
+
+        .timeline-item {
+            position: relative;
+            padding-left: 2.5rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .timeline-item::before {
+            content: '';
+            position: absolute;
+            left: 0;
+            top: 0.25rem;
+            width: 14px;
+            height: 14px;
+            background-color: #3182ce; /* Accent blue */
+            border-radius: 50%;
+            border: 3px solid #e2e8f0; /* Light gray border */
+            z-index: 1;
+        }
+
+        .timeline-item::after {
+            content: '';
+            position: absolute;
+            left: 6px;
+            top: 0.25rem;
+            bottom: -1rem; /* Extend line to connect items */
+            width: 2px;
+            background-color: #cbd5e0; /* Gray line */
+            z-index: 0;
+        }
+
+        .timeline-item:last-child::after {
+            display: none; /* Hide line for the last item */
+        }
+
+        .skill-tag {
+            background-color: #ebf8ff; /* Light blue */
+            color: #2b6cb0; /* Darker blue */
+            padding: 0.4rem 1rem;
+            border-radius: 9999px;
+            font-size: 0.9rem;
+            font-weight: 500;
+            transition: background-color 0.2s, color 0.2s;
+        }
+
+        .skill-tag:hover {
+            background-color: #bee3f8; /* Lighter blue on hover */
+            color: #2c5282;
+        }
+
+        .contact-icon {
+            color: #4a5568; /* Gray icon */
+            margin-right: 0.75rem;
+        }
+
+        .contact-link {
+            color: #2c5282;
+            transition: color 0.2s;
+        }
+
+        .contact-link:hover {
+            color: #3182ce;
+            text-decoration: underline;
+        }
+
+        /* List styles */
+        ul.custom-list {
+            list-style: none;
+            padding-left: 0;
+        }
+
+        ul.custom-list li {
+            position: relative;
+            padding-left: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        ul.custom-list li::before {
+            content: '•'; /* Bullet point */
+            position: absolute;
+            left: 0;
+            color: #3182ce; /* Accent color */
+            font-weight: bold;
+        }
+    </style>
+    <!-- Font Awesome for icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+</head>
+<body class="antialiased">
+<div class="container mx-auto px-4 py-10">
+    <!-- Header Section -->
+    <header class="header-section rounded-xl shadow-lg p-8 mb-10 flex flex-col md:flex-row items-center justify-center text-center md:text-left">
+        <img src="/cv/assets/images/maychi-avatar.jpg" alt="Ảnh đại diện Bùi Vân Chi"
+             class="profile-image mb-6 md:mb-0 md:mr-8">
+        <div>
+            <h1 class="text-5xl font-bold mb-2">Bùi Vân Chi</h1>
+            <p class="text-xl font-light text-blue-200 mb-4">Chuyên viên Truyền thông & Sáng tạo nội dung</p>
+            <div class="flex flex-wrap justify-center md:justify-start gap-x-6 gap-y-2 text-lg text-blue-100">
+                <span class="flex items-center"><i class="fas fa-calendar-alt contact-icon"></i> 14/05/2002</span>
+                <span class="flex items-center"><i class="fas fa-venus contact-icon"></i> Nữ</span>
+                <span class="flex items-center"><i class="fas fa-phone contact-icon"></i> 0969 314 502</span>
+                <span class="flex items-center"><i class="fas fa-envelope contact-icon"></i> chibv.work@gmail.com</span>
+                <span class="flex items-center"><i
+                        class="fas fa-map-marker-alt contact-icon"></i> Thanh Xuân, Hà Nội</span>
+                <a href="https://www.linkedin.com/in/v%C3%A2n-chi-31689821b/" target="_blank"
+                   class="flex items-center contact-link text-blue-100 hover:text-white transition-colors duration-200">
+                    <i class="fab fa-linkedin contact-icon"></i> LinkedIn của Vân Chi
+                </a>
+            </div>
+        </div>
+    </header>
+
+    <!-- Main Content Area -->
+    <main>
+        <!-- Mục tiêu nghề nghiệp -->
+        <section class="card">
+            <h2 class="section-heading">Mục tiêu nghề nghiệp</h2>
+            <p class="text-gray-700 leading-relaxed">
+                Tìm kiếm vị trí Chuyên viên Truyền thông hoặc Content Creator tại môi trường năng động, chuyên nghiệp để
+                phát huy tối đa kỹ năng sáng tạo nội dung, biên tập và quản lý dự án truyền thông đã tích lũy. Mong muốn
+                góp phần vào sự phát triển hình ảnh và thương hiệu của công ty thông qua các chiến dịch truyền thông
+                hiệu quả và sáng tạo.
+            </p>
+        </section>
+
+        <!-- Học vấn -->
+        <section class="card">
+            <h2 class="section-heading">Học vấn</h2>
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Học viện Báo chí và Tuyên truyền</h3>
+                <p class="text-gray-600 text-sm mb-2">2021 - 2025</p>
+                <p class="text-gray-700"><strong>Ngành:</strong> Báo chí</p>
+                <p class="text-gray-700"><strong>Chuyên ngành:</strong> Ảnh báo chí</p>
+                <!-- Thêm thành tích nổi bật nếu có -->
+            </div>
+        </section>
+
+        <!-- Kinh nghiệm làm việc -->
+        <section class="card">
+            <h2 class="section-heading">Kinh nghiệm làm việc</h2>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Thực tập sinh Truyền thông</h3>
+                <p class="text-gray-600 text-sm mb-2">Công ty Cổ phần Kaopiz Holdings | 01/2024 - 05/2025</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li><strong>Sáng tạo nội dung:</strong>
+                        <ul class="custom-list ml-4">
+                            <li>Phụ trách xây dựng trang tin nội bộ, lên kế hoạch truyền thông hàng tháng, triển khai và
+                                hoàn thiện <strong>150+ bài viết</strong> về tin tức, hoạt động sự kiện; <strong>20+ bài
+                                    viết</strong> trong 6 số tập san nội bộ và 6 bài viết Emagazine.
+                            </li>
+                            <li>Hỗ trợ truyền thông doanh nghiệp và tuyển dụng: Lên kịch bản, quay video cho TikTok và
+                                Facebook Reels; chụp ảnh tại các chương trình Ngày hội việc làm tại các trường đại học
+                                khối IT.
+                            </li>
+                        </ul>
+                    </li>
+                    <li><strong>Hỗ trợ sự kiện:</strong>
+                        <ul class="custom-list ml-4">
+                            <li>Thực hiện công tác hậu cần (liên hệ nhà cung cấp, chuẩn bị quà tặng, trang trí sân khấu,
+                                phông check-in) và điều phối sự kiện.
+                            </li>
+                            <li>Trực tiếp tham gia truyền thông và tổ chức sự kiện Kỷ niệm 10 năm thành lập Kaopiz
+                                Holdings với sự góp mặt của hơn <strong>700 cán bộ nhân viên</strong> cùng khách hàng,
+                                đối tác.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Thực tập sinh Truyền thông Nội bộ - Nhân sự</h3>
+                <p class="text-gray-600 text-sm mb-2">Công ty Cổ phần Công nghệ Sandbox.vn | 08/2022 - 10/2023</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li><strong>Truyền thông nội bộ:</strong>
+                        <ul class="custom-list ml-4">
+                            <li>Lên ý tưởng và kế hoạch triển khai các hoạt động nội bộ (ngày lễ, Tết, du lịch, sinh
+                                nhật hàng tháng).
+                            </li>
+                            <li>Thực hiện công tác truyền thông qua Skype, Email và Facebook; công tác hậu cần và điều
+                                phối sự kiện.
+                            </li>
+                            <li>Viết content, chụp ảnh, quay dựng video cho các sự kiện, hoạt động nội bộ.</li>
+                        </ul>
+                    </li>
+                    <li><strong>Tuyển dụng:</strong>
+                        <ul class="custom-list ml-4">
+                            <li>Chiêu mộ ứng viên, lọc CV, liên hệ và chăm sóc ứng viên, điều phối phỏng vấn,
+                                onboarding.
+                            </li>
+                        </ul>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Hoạt động ngoại khóa -->
+        <section class="card">
+            <h2 class="section-heading">Hoạt động ngoại khóa</h2>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Trưởng nhóm Truyền thông Facebook</h3>
+                <p class="text-gray-600 text-sm mb-2">Lễ kỷ niệm 40 năm thành lập THPT Chuyên Nguyễn Trãi | 11/2023 -
+                    12/2024</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li>Lập kế hoạch truyền thông và phân chia công việc cho các thành viên, kiểm soát chất lượng sản
+                        phẩm.
+                    </li>
+                    <li>Trực tiếp lên ý tưởng và hoàn thiện <strong>70+ bài đăng</strong>.</li>
+                    <li>Trang Facebook đạt lượt tiếp cận <strong>320.000 người</strong> trong thời gian triển khai.</li>
+                    <li>Chịu trách nhiệm chính tổ chức Cuộc thi viết "Nhắn gửi thanh xuân": Lập kế hoạch, biên tập bài
+                        dự thi, tổng kết chỉ số. Cuộc thi thu hút <strong>120 bài dự thi</strong>, đạt lượt tiếp cận
+                        <strong>134.000 người</strong> trong 3 tháng.
+                    </li>
+                    <li>Chịu trách nhiệm chính biên tập và sản xuất Tập san "Nhắn gửi thanh xuân": Lên ý tưởng nội dung,
+                        biên tập bài viết, phối hợp thiết kế, đăng tải lên nền tảng trực tuyến và điều phối đội ngũ thu
+                        âm sách nói đăng tải trên Spotify.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Thành viên Đội Mạng - Ban Truyền thông</h3>
+                <p class="text-gray-600 text-sm mb-2">Chương trình Chào tân Viện Báo chí - Fire Up 2023 | 08/2023 -
+                    11/2023</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li>Thực hiện lên ý tưởng bài viết, thiết kế, hình ảnh và kịch bản video cho các ấn phẩm truyền
+                        thông trên Facebook.
+                    </li>
+                    <li>Đi sản xuất cùng đội ảnh, đội quay dựng. Trang Facebook đạt <strong>5.000 lượt thích</strong>
+                        sau 2 tháng.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Thành viên Đội Mạng - Ban Truyền thông</h3>
+                <p class="text-gray-600 text-sm mb-2">Chương trình Tri ân cho sinh viên K38 - Phút Cuối 2022 | 05/2022 -
+                    06/2022</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li>Thực hiện lên ý tưởng bài viết, thiết kế, hình ảnh trên trang Facebook.</li>
+                    <li>Trang Facebook đạt hơn <strong>7.000 lượt thích</strong> sau 1 tháng, tiếp cận trang <strong>200.000+
+                        người</strong>, nhiều bài viết tiếp cận <strong>30.000+ người</strong>.
+                    </li>
+                </ul>
+            </div>
+
+            <div class="timeline-item">
+                <h3 class="text-xl font-semibold text-gray-800 mb-1">Thành viên Ban Content</h3>
+                <p class="text-gray-600 text-sm mb-2">Dự án Tuyển sinh K42 Học viện Báo chí và Tuyên truyền | 05/2022 -
+                    09/2022</p>
+                <ul class="custom-list text-gray-700 space-y-1">
+                    <li>Cùng đội nhóm thực hiện các ấn phẩm truyền thông đa nền tảng: Facebook (trang và nhóm), TikTok,
+                        Báo chí.
+                    </li>
+                    <li>Nhóm Facebook đạt hơn <strong>1.000 thành viên</strong> sau 1 tháng. Trang Facebook đạt lượt
+                        tiếp cận trang hơn <strong>40.000+ người</strong>, tiếp cận bài viết trung bình <strong>3.000+
+                            người</strong>.
+                    </li>
+                    <li>Viết kịch bản TikTok, tham gia sản xuất <strong>90+ video</strong> (10 video chính), kênh TikTok
+                        đạt <strong>11.000 followers</strong> sau 3 tháng.
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Kỹ năng -->
+        <section class="card">
+            <h2 class="section-heading">Kỹ năng</h2>
+            <div class="mb-6">
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Kỹ năng chuyên môn:</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag">Nghiên cứu & Lập kế hoạch</span>
+                    <span class="skill-tag">Sáng tạo ý tưởng</span>
+                    <span class="skill-tag">Viết & Biên tập nội dung (Báo chí, Web, MXH)</span>
+                    <span class="skill-tag">Thiết kế ảnh (Canva, Photoshop cơ bản)</span>
+                    <span class="skill-tag">Quay dựng video (CapCut, Kinemaster cơ bản)</span>
+                </div>
+            </div>
+            <div>
+                <h3 class="text-lg font-semibold text-gray-800 mb-3">Kỹ năng mềm:</h3>
+                <div class="flex flex-wrap gap-3">
+                    <span class="skill-tag">Giao tiếp hiệu quả</span>
+                    <span class="skill-tag">Làm việc nhóm</span>
+                    <span class="skill-tag">Quản lý thời gian</span>
+                    <span class="skill-tag">Sử dụng công cụ AI</span>
+                    <span class="skill-tag">Giải quyết vấn đề</span>
+                    <span class="skill-tag">Thích nghi nhanh</span>
+                </div>
+            </div>
+        </section>
+
+        <!-- Chứng chỉ & Giải thưởng -->
+        <section class="card">
+            <h2 class="section-heading">Chứng chỉ & Giải thưởng</h2>
+            <ul class="custom-list text-gray-700">
+                <li>VSTEP B2 (Tiếng Anh)</li>
+                <li>(Nếu có giải thưởng/chứng chỉ khác, hãy liệt kê chi tiết ở đây)</li>
+            </ul>
+        </section>
+    </main>
+</div>
+</body>
+</html>
+

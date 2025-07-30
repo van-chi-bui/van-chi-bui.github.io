@@ -1,0 +1,41 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Vân Chi Bùi | Web của tôi</title>
+</head>
+
+<body>
+<div id="redirect-message" style="font-size: 20px;"></div>
+</body>
+
+<script>
+    const path = window.location.pathname;
+    let targetUrl;
+    if (path.endsWith('/index.html')) {
+        targetUrl = path.replace('/index.html', '/cv/index.html');
+    } else {
+        targetUrl = path.replace(/\/$/, '') + '/cv';
+    }
+
+    let seconds = 10;
+    const messageDiv = document.getElementById('redirect-message');
+
+    function updateMessage() {
+        messageDiv.innerHTML = `😉 Vân Chi sẽ giúp bạn chuyển hướng đến trang <a href="${targetUrl}">CV của Vân Chi</a> trong ${seconds} giây nữa... <br><br> Hoặc bạn có thể nhấn vào liên kết để chuyển hướng ngay.`;
+    }
+
+    updateMessage();
+
+    const interval = setInterval(() => {
+        seconds--;
+        updateMessage();
+        if (seconds === 0) {
+            clearInterval(interval);
+            window.location.replace(targetUrl);
+        }
+    }, 1000);
+</script>
+
+</html>

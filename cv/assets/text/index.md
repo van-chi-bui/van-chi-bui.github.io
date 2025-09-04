@@ -4,7 +4,7 @@
 
 Content Creator
 
-14/05/2002 | Nữ | 0969 314 502 | [chibv.work@gmail.com](mailto:chibv.work@gmail.com) | Thanh Xuân, Hà Nội | [LinkedIn của Vân Chi](https://www.linkedin.com/in/v%C3%A2n-chi-31689821b/)
+14/05/2002 ｜ Nữ ｜ 0969 314 502 ｜ [chibv.work@gmail.com](mailto:chibv.work@gmail.com) ｜ Thanh Xuân, Hà Nội ｜ [LinkedIn của Vân Chi](https://www.linkedin.com/in/v%C3%A2n-chi-31689821b/)
 
 ## Mục tiêu nghề nghiệp
 
@@ -24,7 +24,7 @@ _2021 - 2025_
 
 ### Thực tập sinh Truyền thông
 
-_Công ty Cổ phần Kaopiz Holdings | 01/2024 - 05/2025_
+_Công ty Cổ phần Kaopiz Holdings ｜ 01/2024 - 05/2025_
 
 *   **Sáng tạo nội dung**
     *   Xây dựng và quản lý nội dung cho trang tin nội bộ của công ty về mảng tin tức nội bộ; hoạt động văn hóa, sự kiện; phỏng vấn cán bộ nhân viên; ấn phẩm nội bộ (tập san, emagazine)
@@ -41,7 +41,7 @@ _Công ty Cổ phần Kaopiz Holdings | 01/2024 - 05/2025_
 
 ### Thực tập sinh Truyền thông Nội bộ - Nhân sự
 
-_Công ty Cổ phần Công nghệ Sandbox.vn | 08/2022 - 10/2023_
+_Công ty Cổ phần Công nghệ Sandbox.vn ｜ 08/2022 - 10/2023_
 
 *   **Truyền thông nội bộ:**
     *   Lên ý tưởng và kế hoạch triển khai cho các hoạt động nội bộ: các ngày lễ, chương trình Tết, du lịch; tiệc sinh nhật hàng tháng,...
@@ -56,7 +56,7 @@ _Công ty Cổ phần Công nghệ Sandbox.vn | 08/2022 - 10/2023_
 
 ### Trưởng nhóm Truyền thông
 
-_Lễ kỷ niệm 40 năm thành lập THPT Chuyên Nguyễn Trãi | 11/2023 - 12/2024_
+_Lễ kỷ niệm 40 năm thành lập THPT Chuyên Nguyễn Trãi ｜ 11/2023 - 12/2024_
 
 *   Quản lí trang Facebook
     *   Lập kế hoạch truyền thông và phân chia công việc cho các thành viên, kiểm soát chất lượng sản phẩm.
@@ -74,7 +74,7 @@ _Lễ kỷ niệm 40 năm thành lập THPT Chuyên Nguyễn Trãi | 11/2023 - 1
 
 ### Thành viên Đội Mạng - Ban Truyền thông
 
-_Chương trình Chào tân Viện Báo chí - Fire Up 2023 | 08/2023 - 11/2023_
+_Chương trình Chào tân Viện Báo chí - Fire Up 2023 ｜ 08/2023 - 11/2023_
 
 *   Thực hiện lên ý tưởng bài viết, ý tưởng thiết kế, hình ảnh và kịch bản video cho các ấn phẩm truyền thông trên trang Facebook của sự kiện.
 *   Đi sản xuất cùng đội ảnh, đội quay dựng cho ấn phẩm truyền thông.
@@ -82,14 +82,14 @@ _Chương trình Chào tân Viện Báo chí - Fire Up 2023 | 08/2023 - 11/2023_
 
 ### Thành viên Đội Mạng - Ban Truyền thông
 
-_Chương trình Tri ân cho sinh viên K38 - Phút Cuối 2022 | 05/2022 - 06/2022_
+_Chương trình Tri ân cho sinh viên K38 - Phút Cuối 2022 ｜ 05/2022 - 06/2022_
 
 *   Thực hiện lên ý tưởng bài viết, ý tưởng thiết kế, hình ảnh trên trang Facebook của sự kiện.
 *   Cùng phát triển trang Facebook đạt hơn **7.000 lượt thích** sau 1 tháng, tiếp cận page **200.000+ người**, nhiều bài viết tiếp cận **30.000+ người**.
 
 ### Thành viên Ban Content
 
-_Dự án Tuyển sinh K42 Học viện Báo chí và Tuyên truyền | 05/2022 - 09/2022_
+_Dự án Tuyển sinh K42 Học viện Báo chí và Tuyên truyền ｜ 05/2022 - 09/2022_
 
 *   Cùng đội nhóm thực hiện các ấn phẩm truyền thông đa nền tảng: trang Facebook, nhóm Facebook; Tiktok; Báo chí.
 *   Nhóm Facebook đạt hơn **1.000 thành viên** sau 1 tháng. Trang Facebook: lượt tiếp cận page hơn **40.000+ người**, tiếp cận bài viết trung bình **3000+ người**.

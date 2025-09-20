@@ -1,0 +1,77 @@
+/* --- 1. Style cho container của cụm nút --- */
+#glass-button-group {
+    /* Vị trí và hiệu ứng ẩn/hiện giống như trước */
+    position: fixed;
+    top: 20px;
+    left: 20px;
+    z-index: 1000;
+    opacity: 0;
+    transform: translateY(-50px);
+    visibility: hidden;
+    transition: all 0.4s cubic-bezier(0.175, 0.885, 0.32, 1.5);
+
+    /* Hiệu ứng kính mờ áp dụng cho cả cụm */
+    background-color: rgba(255, 255, 255, 0.15);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(12px);
+    -webkit-backdrop-filter: blur(12px);
+    box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+    border-radius: 50px; /* Bo tròn cả cụm */
+
+    /* Dùng Flexbox để sắp xếp 2 nút con */
+    display: flex;
+    overflow: hidden; /* Đảm bảo các nút con không tràn ra ngoài border-radius */
+}
+
+/* Trạng thái hiển thị của container */
+#glass-button-group.visible {
+    opacity: 1;
+    transform: translateY(0);
+    visibility: visible;
+}
+
+/* --- 2. Style cho từng nút (thẻ a) bên trong --- */
+#glass-button-group a {
+    position: relative;
+    padding: 10px 20px;
+    font-size: 14px;
+    font-weight: 600;
+    font-family: 'Inter', sans-serif;
+    color: #70757a;
+    text-decoration: none;
+    text-align: center;
+
+    /* Hiệu ứng chuyển đổi nền mượt mà */
+    transition: all 0.3s ease;
+
+    /* Đường kẻ phân cách giữa 2 nút */
+    /*border-left: 1px solid rgba(255, 255, 255, 0.2);*/
+    border-left: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+/* Bỏ đường kẻ phân cách cho nút đầu tiên */
+#glass-button-group a:first-child {
+    border-left: none;
+}
+
+/* --- 3. Style cho nút đang active --- */
+#glass-button-group a.active {
+    background-color: rgba(255, 255, 255, 0.4); /* Nền sáng hơn để nổi bật */
+    color: rgb(24, 52, 106);
+    cursor: default; /* Con trỏ mặc định vì nó đã được chọn */
+    /*text-decoration: underline;*/
+    text-underline-offset: 3px; /* Khoảng cách gạch chân từ chữ */
+    text-decoration-color: rgba(24, 52, 106, 0.25); /* Màu gạch chân nhạt hơn */
+}
+
+/* --- 4. Style khi hover vào nút không active --- */
+#glass-button-group a:not(.active):hover {
+    background-color: rgba(255, 255, 255, 0.4); /* Hiệu ứng nền nhẹ khi hover */
+    color: rgb(24, 52, 106);
+}
+
+/* --- 6. Hiệu ứng khi di chuột vào (hover) --- */
+#glass-button-group:hover {
+    transform: scale(1.08); /* Phóng to nhẹ 8% */
+    background: rgba(255, 255, 255, 0.3); /* Nền sáng hơn một chút */
+}

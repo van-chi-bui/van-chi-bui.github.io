@@ -59,7 +59,9 @@
 <script src="/custom-scrollbar/script.js"></script>
 
 <script>
-    if (isTouchDevice()) {
+    const showScroll = getQueryParam('show_scroll');
+
+    if (isTouchDevice() || showScroll != null) {
         // setInterval(() => {
         //     const visibility = document.querySelector('.iframe-overlay').style.visibility;
         //     if (visibility === 'hidden') {

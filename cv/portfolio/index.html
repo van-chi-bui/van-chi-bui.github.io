@@ -54,18 +54,11 @@
     </iframe>
 </div>
 
+<script src="/cv/assets/script/util.js"></script>
 <script src="/cv/assets/script/glass-button-group-header.js"></script>
 <script src="/custom-scrollbar/script.js"></script>
 
 <script>
-    /**
-     * Kiểm tra xem thiết bị hiện tại có hỗ trợ màn hình cảm ứng hay không.
-     * @returns {boolean} Trả về `true` nếu là thiết bị cảm ứng, ngược lại trả về `false`.
-     */
-    function isTouchDevice() {
-        return ('ontouchstart' in window) || (navigator.maxTouchPoints > 0);
-    }
-
     if (isTouchDevice()) {
         // setInterval(() => {
         //     const visibility = document.querySelector('.iframe-overlay').style.visibility;

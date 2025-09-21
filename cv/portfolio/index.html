@@ -6,11 +6,13 @@
     <title>Portfolio Bùi Vân Chi | My Web</title>
     <link rel="shortcut icon" href="/cv/assets/images/maychi-favicon.jpg" type="image/x-icon">
     <link rel="stylesheet" href="/cv/assets/style/glass-button-group-header.css">
+    <link rel="stylesheet" href="/custom-scrollbar/style.css">
     <style>
         body {
             margin: 0;
             padding: 0;
         }
+
         .iframe-overlay {
             position: absolute;
             width: 100%;
@@ -29,6 +31,13 @@
 </head>
 
 <body>
+<!-- Floating Scrollbar for Page -->
+<div class="floating-scrollbar" id="pageScrollbar">
+    <div class="floating-scrollbar-track">
+        <div class="floating-scrollbar-thumb" id="pageScrollbarThumb"></div>
+    </div>
+</div>
+
 <div id="glass-button-group">
     <a href="/cv/portfolio/" class="active handleOpenCvOrPortfolioPage">Portfolio</a>
     <a href="/cv/" class="handleOpenCvOrPortfolioPage">CV</a>
@@ -46,6 +55,7 @@
 </div>
 
 <script src="/cv/assets/script/glass-button-group-header.js"></script>
+<script src="/custom-scrollbar/script.js"></script>
 
 <script>
     /**
@@ -57,14 +67,33 @@
     }
 
     if (isTouchDevice()) {
-        setInterval(() => {
-            const visibility = document.querySelector('.iframe-overlay').style.visibility;
-            if (visibility === 'hidden') {
-                document.querySelector('.iframe-overlay').style.visibility = 'visible'
-            } else {
-                document.querySelector('.iframe-overlay').style.visibility = 'hidden'
-            }
-        }, 1)
+        // setInterval(() => {
+        //     const visibility = document.querySelector('.iframe-overlay').style.visibility;
+        //     if (visibility === 'hidden') {
+        //         document.querySelector('.iframe-overlay').style.visibility = 'visible'
+        //     } else {
+        //         document.querySelector('.iframe-overlay').style.visibility = 'hidden'
+        //     }
+        // }, 1)
+
+        useCustomFloatingScrollbar()
+    }
+
+    function useCustomFloatingScrollbar() {
+        document.addEventListener('DOMContentLoaded', () => {
+            // Initialize floating scrollbar for page
+            const floatingScrollbar = new FloatingScrollbar('pageScrollbar', 'pageScrollbarThumb');
+
+            floatingScrollbar.setPersistent(true);
+            floatingScrollbar.setPosition('center');
+            floatingScrollbar.setSize('compact');
+            // floatingScrollbar.setWidth('compact');
+            floatingScrollbar.setWidth('custom', 35);
+            floatingScrollbar.setOpacity('medium');
+            // floatingScrollbar.setOpacity('custom', 10);
+
+            document.documentElement.classList.add('hide-system-scrollbar'); // set on html element to hide system scrollbar
+        })
     }
 </script>
 </body>

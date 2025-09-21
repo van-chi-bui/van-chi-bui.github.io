@@ -1,0 +1,268 @@
+/* ============ CUSTOM SCROLLBAR LIBRARY ============ */
+
+/* Class để ẩn scrollbar hệ thống */
+.hide-system-scrollbar {
+    scrollbar-width: none !important; /* Firefox */
+    -ms-overflow-style: none !important; /* IE/Edge */
+}
+
+.hide-system-scrollbar::-webkit-scrollbar {
+    display: none !important; /* Chrome, Safari, Opera */
+    width: 0px !important;
+    background: transparent !important;
+}
+
+/* Floating scrollbar styles */
+.floating-scrollbar {
+    position: fixed;
+    right: 10px;
+    width: 50px;
+    background: rgba(0, 0, 0, var(--scrollbar-bg-opacity, 0.1));
+    border-radius: 25px;
+    z-index: 8888;
+    opacity: 0;
+    transition: opacity 0.2s ease, background 0.2s ease;
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, var(--scrollbar-border-opacity, 0.2));
+    cursor: pointer;
+    will-change: opacity;
+    backface-visibility: hidden;
+    --scrollbar-bg-opacity: 0.1;
+    --scrollbar-border-opacity: 0.2;
+    --scrollbar-hover-bg-opacity: 0.15;
+}
+
+/* Position classes */
+.floating-scrollbar.position-center {
+    top: 50%;
+    transform: translateY(-50%);
+    height: min(300px, calc(100vh - 40px));
+}
+
+.floating-scrollbar.position-top {
+    top: 100px;
+    transform: none;
+    height: min(300px, calc(100vh - 120px));
+}
+
+.floating-scrollbar.position-bottom {
+    bottom: 100px;
+    transform: none;
+    height: min(300px, calc(100vh - 120px));
+}
+
+/* Size classes */
+.floating-scrollbar.size-compact {
+    /* Height will be set by position classes with responsive logic */
+}
+
+.floating-scrollbar.size-compact.position-center {
+    height: min(300px, calc(100vh - 40px));
+}
+
+.floating-scrollbar.size-compact.position-top {
+    height: min(300px, calc(100vh - 120px));
+}
+
+.floating-scrollbar.size-compact.position-bottom {
+    height: min(300px, calc(100vh - 120px));
+}
+
+.floating-scrollbar.size-full {
+    top: 10px !important;
+    bottom: 10px !important;
+    height: calc(100vh - 20px) !important;
+    transform: none !important;
+}
+
+/* Combined position and size adjustments */
+.floating-scrollbar.size-full.position-center,
+.floating-scrollbar.size-full.position-top,
+.floating-scrollbar.size-full.position-bottom {
+    top: 10px !important;
+    bottom: 10px !important;
+    height: calc(100vh - 20px) !important;
+    transform: none !important;
+}
+
+/* Width classes */
+.floating-scrollbar.width-default {
+    width: 50px;
+}
+
+.floating-scrollbar.width-compact {
+    width: 30px;
+}
+
+.floating-scrollbar.width-custom {
+    /* Width will be set dynamically via JavaScript */
+}
+
+/* Adjust thumb width based on scrollbar width */
+.floating-scrollbar.width-default .floating-scrollbar-thumb {
+    width: 30px;
+}
+
+.floating-scrollbar.width-default .floating-scrollbar-thumb:hover {
+    width: 35px;
+}
+
+.floating-scrollbar.width-default .floating-scrollbar-thumb:active {
+    width: 40px;
+}
+
+.floating-scrollbar.width-compact .floating-scrollbar-thumb {
+    width: 18px;
+}
+
+.floating-scrollbar.width-compact .floating-scrollbar-thumb:hover {
+    width: 22px;
+}
+
+.floating-scrollbar.width-compact .floating-scrollbar-thumb:active {
+    width: 25px;
+}
+
+/* Custom width thumb proportions will be calculated dynamically */
+
+.floating-scrollbar.visible {
+    opacity: 1;
+}
+
+/* Persistent scrollbar - never auto-hide */
+.floating-scrollbar.persistent {
+    opacity: 1 !important;
+}
+
+.floating-scrollbar.persistent:not(.visible) {
+    opacity: 0.7;
+}
+
+.floating-scrollbar:hover {
+    background: rgba(0, 0, 0, var(--scrollbar-hover-bg-opacity, 0.15));
+    opacity: 1;
+}
+
+/* Opacity level classes */
+.floating-scrollbar.opacity-light {
+    --scrollbar-bg-opacity: 0.05;
+    --scrollbar-border-opacity: 0.1;
+    --scrollbar-hover-bg-opacity: 0.1;
+}
+
+.floating-scrollbar.opacity-medium {
+    --scrollbar-bg-opacity: 0.1;
+    --scrollbar-border-opacity: 0.2;
+    --scrollbar-hover-bg-opacity: 0.15;
+}
+
+.floating-scrollbar.opacity-strong {
+    --scrollbar-bg-opacity: 0.2;
+    --scrollbar-border-opacity: 0.3;
+    --scrollbar-hover-bg-opacity: 0.25;
+}
+
+.floating-scrollbar.opacity-custom {
+    /* Opacity will be set dynamically via JavaScript */
+}
+
+.floating-scrollbar-track {
+    width: 100%;
+    height: 100%;
+    position: relative;
+    border-radius: 25px;
+    /* Add small padding to create space for thumb at top/bottom */
+    padding: 4px 0;
+    box-sizing: border-box;
+}
+
+.floating-scrollbar-thumb {
+    width: 30px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    border-radius: 15px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+    cursor: grab;
+    transition: width 0.2s ease, background 0.2s ease, box-shadow 0.2s ease;
+    box-shadow: 0 5px 15px rgba(102, 126, 234, 0.4);
+    min-height: 30px;
+    border: 2px solid rgba(255, 255, 255, 0.3);
+    will-change: transform;
+    backface-visibility: hidden;
+}
+
+.floating-scrollbar-thumb:hover {
+    background: linear-gradient(135deg, #5a67d8 0%, #667eea 100%);
+    box-shadow: 0 8px 25px rgba(102, 126, 234, 0.6);
+}
+
+.floating-scrollbar-thumb:active {
+    cursor: grabbing;
+    background: linear-gradient(135deg, #4c51bf 0%, #5a67d8 100%);
+}
+
+.floating-scrollbar-thumb::before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    width: 12px;
+    height: 2px;
+    background: rgba(255, 255, 255, 0.8);
+    border-radius: 1px;
+    box-shadow: 0 -4px 0 rgba(255, 255, 255, 0.8),
+    0 4px 0 rgba(255, 255, 255, 0.8);
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .floating-scrollbar.width-default {
+        width: 40px;
+    }
+
+    .floating-scrollbar.width-compact {
+        width: 25px;
+    }
+
+    .floating-scrollbar.size-compact.position-center {
+        height: min(250px, calc(100vh - 40px));
+    }
+
+    .floating-scrollbar.size-compact.position-top {
+        height: min(250px, calc(100vh - 120px));
+    }
+
+    .floating-scrollbar.size-compact.position-bottom {
+        height: min(250px, calc(100vh - 120px));
+    }
+
+    .floating-scrollbar.size-full {
+        height: calc(100vh - 20px) !important;
+    }
+
+    .floating-scrollbar.width-default .floating-scrollbar-thumb {
+        width: 25px;
+    }
+
+    .floating-scrollbar.width-default .floating-scrollbar-thumb:hover {
+        width: 30px;
+    }
+
+    .floating-scrollbar.width-default .floating-scrollbar-thumb:active {
+        width: 35px;
+    }
+
+    .floating-scrollbar.width-compact .floating-scrollbar-thumb {
+        width: 15px;
+    }
+
+    .floating-scrollbar.width-compact .floating-scrollbar-thumb:hover {
+        width: 18px;
+    }
+
+    .floating-scrollbar.width-compact .floating-scrollbar-thumb:active {
+        width: 20px;
+    }
+}

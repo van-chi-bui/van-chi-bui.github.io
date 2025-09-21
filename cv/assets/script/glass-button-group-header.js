@@ -53,10 +53,11 @@ handleOpenCvOrPortfolioPages.forEach(button => {
 function handleOpenCvOrPortfolioPage(uri) {
     if (uri === '/cv/portfolio/' && isTouchDevice()) {
         setTimeout(() => {
-            window.open('https://chibvportfolio.my.canva.site/vanchibui/', '_blank');
+            // window.open('https://chibvportfolio.my.canva.site/vanchibui/', '_blank');
 
             setTimeout(() => {
-                location = '/cv/portfolio/?show_nav=1';
+                // location = '/cv/portfolio/?show_nav=1';
+                location = '/cv/portfolio';
             }, 300)
         }, 300)
     } else if (uri === '/cv/portfolio/' && uri === location.pathname) {
